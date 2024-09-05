@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Rubik:ital,wght@1,400;1,800&display=swap');
+
+@font-face {
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik Iso', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Rubik:ital@1&display=swap');
+}
+
+* {
+    box-shadow: 0px 0px 0px 1px black;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+body {
+    text-align: center;
+    background-color: #f6f6f6;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 800;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    /* make button better */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* add hover effect for button */
+button:hover {
+    background-color: gray;
+    color: #333;
+}
+
+.food-card {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.food-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #626bf0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+header {
+    background-color: #1c03ff;
+    color: #490af5;
+    padding: 10px;
+}
+
+nav {
+    width: 200px;
+    background-color: #4808f8;
+    padding: 10px;
+    float: left;
+}
+
+aside {
+    width: 200px;
+    background-color: #0a0ef3;
+    padding: 10px;
+    float: right;
+}
+
+footer div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer div div {
+    justify-content: flex-start;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+footer div div p {
+    width: fit-content;
+    margin: 0px;
+}
+
+footer div div h1 {
+    margin: 0px;
+}
+footer {
+    margin-top: 50px;
+}
